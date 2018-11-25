@@ -1,0 +1,10 @@
+services:
+  fgp.extender:
+    class: '\Drupal\fgp\Extender'
+    arguments:
+      - '@app.root'
+      - '@site.path'
+  fgp.form_helper:
+    class: '\Drupal\fgp\FormHelper'
+    arguments:
+      - '@element_info'
