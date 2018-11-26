@@ -51,3 +51,6 @@ before_install:
 script:
   - make drupal_install
   - sudo make test
+
+after_success:
+  - ./trigger-dockerhub.sh
