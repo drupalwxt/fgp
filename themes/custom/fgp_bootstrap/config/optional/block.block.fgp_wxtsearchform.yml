@@ -16,4 +16,9 @@ settings:
   label: 'WxT Search form'
   provider: wxt_library
   label_display: visible
-visibility: {  }
+visibility:
+  panels_title:
+    id: panels_title
+    enabled: 0
+    negate: false
+    context_mapping: {  }

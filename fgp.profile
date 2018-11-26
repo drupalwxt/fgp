@@ -21,6 +21,10 @@ function fgp_install_tasks() {
       'display_name' => t('Import language configuration'),
       'display' => TRUE,
     ],
+    'fgp_import_translations' => [
+      'display_name' => t('Import translations'),
+      'display' => TRUE,
+    ],
   ];
 }
 
@@ -47,7 +51,9 @@ function fgp_install_tasks_alter(array &$tasks, array $install_state) {
 function fgp_install_extensions(array &$install_state) {
   $batch = [];
   $modules = [
+    'wxt_ext',
     'fgp_ext',
+    'drush_language',
   ];
   foreach ($modules as $module) {
     $batch['operations'][] = ['fgp_install_module', (array) $module];
@@ -109,4 +115,15 @@ function fgp_import_language_config(array &$install_state) {
       $config->save();
     }
   }
+}
+
+/**
+ * Install task callback; imports translations.
+ *
+ * @param array $install_state
+ *   The current install state.
+ */
+function fgp_import_translations(array &$install_state) {
+  drush_invoke_process('@self', 'cache-clear', ['drush']);
+  drush_invoke_process('@self', 'language-import', ['profiles/fgp/translations/fgp.fr.po']);
 }

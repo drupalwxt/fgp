@@ -7,9 +7,6 @@ dependencies:
     - system
   theme:
     - fgp_bootstrap
-third_party_settings:
-  block_class:
-    classes: ''
 id: fgp_brand
 theme: fgp_bootstrap
 region: branding

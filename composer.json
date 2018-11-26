@@ -243,19 +243,15 @@
             ]
         },
         "enable-patching": true,
-        "patches": {
-            "drupal/chosen": {
-                "Enter drupal/chosen patch #2706433 description here":
-                "https://www.drupal.org/files/issues/composer_dist_problem-2706433-28.patch"
-            }
-        }
+        "patches": { }
     },
     "require": {
         "composer/installers": "^1.2",
-        "cweagans/composer-patches": "^1.6.0",
+        "cweagans/composer-patches": "^1.6.4",
         "drupal-composer/drupal-scaffold": "^2.0.0",
-        "harvesthq/chosen": "1.6.1",
-        "drupalwxt/wxt": "2.2.1"
+        "harvesthq/chosen": "^1.8",
+        "drupalwxt/wxt": "2.2.1",
+        "drupal/drush_language": "1.0-rc1"
     },
     "autoload": {
         "psr-4": {

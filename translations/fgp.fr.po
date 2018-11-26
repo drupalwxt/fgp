@@ -1,0 +1,22 @@
+# French translation of Drupal Install Profile (fgp)
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: PROJECT VERSION\n"
+"POT-Creation-Date: 2017-09-12 21:06+0000\n"
+"PO-Revision-Date: 2017-09-12 21:06+0000\n"
+"Last-Translator: NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <EMAIL@ADDRESS>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+msgid "Date modified:"
+msgstr "Date de modification :"
+
+msgid "Search website"
+msgstr "Rechercher dans le site Web"
+
+msgid "Skip to footer"
+msgstr "Aller au pied de page"
